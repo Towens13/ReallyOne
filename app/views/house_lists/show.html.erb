@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @house_list.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @house_list.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @house_list.zipCode %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @house_list.address %>
+</p>
+
+<%= link_to 'Edit', edit_house_list_path(@house_list) %> |
+<%= link_to 'Back', house_lists_path %>

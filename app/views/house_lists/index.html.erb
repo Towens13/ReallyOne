@@ -1,0 +1,33 @@
+<h1>Listing house_lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Address</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @house_lists.each do |house_list| %>
+      <tr>
+        <td><%= house_list.city %></td>
+        <td><%= house_list.state %></td>
+        <td><%= house_list.zipCode %></td>
+        <td><%= house_list.address %></td>
+        <td><%= link_to 'Show', house_list %></td>
+        <td><%= link_to 'Edit', edit_house_list_path(house_list) %></td>
+        <td><%= link_to 'Destroy', house_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New House list', new_house_list_path %>
