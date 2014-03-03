@@ -1,3 +1,24 @@
 // Place all the styles related to the houseLists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.house_list {
+	border-bottom: solid 2px #CCC;
+	padding: 5px 0;
+}
+
+.house_list p {
+margin: 4px 0;
+}
+
+.house_list.hover {
+	background: #F0F0F0;
+}
+
+.house_list .admin {
+	display: none;
+}
+
+.house_list.hover .admin {
+	display: inline;
+}
