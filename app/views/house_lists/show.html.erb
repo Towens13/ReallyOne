@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Address:</strong>
+  <%= @house_list.address %>
+</p>
+
+<p>
   <strong>City:</strong>
   <%= @house_list.city %>
 </p>
@@ -15,10 +20,7 @@
   <%= @house_list.zipCode %>
 </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @house_list.address %>
-</p>
+
 
 <%= link_to 'Edit', edit_house_list_path(@house_list) %> |
 <%= link_to 'Back', house_lists_path %>
